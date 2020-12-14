@@ -2,12 +2,12 @@ import React from 'react';
 import {SafeAreaView, ScrollView} from 'react-native';
 import FeedDetail from '../common/FeedContainer/Components/FeedDetail/FeedDetail';
 
-const FeedDetailScreen = (props) => {
+const FeedDetailScreen = () => {
   return (
     <>
       <SafeAreaView>
         <ScrollView contentInsetAdjustmentBehavior="automatic">
-          <FeedDetail {...props} />
+          <FeedDetail />
         </ScrollView>
       </SafeAreaView>
     </>

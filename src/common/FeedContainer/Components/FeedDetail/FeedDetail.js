@@ -1,6 +1,6 @@
 import React from 'react';
 import {Content, Card} from 'native-base';
-import {useNavigation} from '@react-navigation/native';
+import {useNavigation, useRoute} from '@react-navigation/native';
 import {useEffect} from 'react';
 import FeedStats from './Components/FeedStats';
 import FeedComment from './Components/FeedComment';
@@ -8,8 +8,9 @@ import FeedUser from '../FeedUser';
 import FeedImage from '../FeedImage';
 import FeedCaption from '../FeedCaption';
 
-const FeedDetail = ({route}) => {
+const FeedDetail = () => {
   const navigation = useNavigation();
+  const route = useRoute();
   const {
     params: {feed},
   } = route;
